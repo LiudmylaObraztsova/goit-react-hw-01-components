@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import defaultImage from '../nophoto.jpg'
 
 export default function Profile({ src=defaultImage, alt, name, tag, location, followers, views, likes }) {
@@ -31,6 +32,17 @@ export default function Profile({ src=defaultImage, alt, name, tag, location, fo
 </div>
 }
 
+Profile.propTypes = {
+    src: PropTypes.string,
+    alt: PropTypes.string,
+    name: PropTypes.string,
+    tag: PropTypes.string,
+    location: PropTypes.string,
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes:PropTypes.number,
+    
+}
 
 // ReactDOM.render(<Profile
 //   src={user.avatar}
