@@ -1,32 +1,33 @@
 import PropTypes from 'prop-types'
 import defaultImage from '../nophoto.jpg'
+import styles from './Profile.module.css'
 
 export default function Profile({ src=defaultImage, alt, name, tag, location, followers, views, likes }) {
 
-  return <div class="profile">
-  <div class="description">
+  return <div className={styles.Profile}>
+  <div className={styles.Description}>
     <img
       src={src}
       alt={alt}
-      class="avatar"
+      className={styles.Avatar}
     />
-      <p class="name">{name }</p>
-      <p class="tag">{ tag}</p>
-      <p class="location">{ location}</p>
+      <p className={styles.Name}>{name }</p>
+      <p className={styles.Tag}>@{tag}</p>
+      <p className={styles.Location}>{ location}</p>
   </div>
 
-  <ul class="stats">
+  <ul className={styles.Stats}>
     <li>
-      <span class="label">Followers: </span>
-        <span class="quantity">{ followers}</span>
+      <span className={styles.Label}>Followers: </span>
+        <span className={styles.Quantity}>{ followers}</span>
     </li>
     <li>
-      <span class="label">Views: </span>
-      <span class="quantity">{views}</span>
+      <span className={styles.Label}>Views: </span>
+      <span className={styles.Quantity}>{views}</span>
     </li>
     <li>
-      <span class="label">Likes: </span>
-      <span class="quantity">{likes}</span>
+      <span className={styles.Label}>Likes: </span>
+      <span className={styles.Quantity}>{likes}</span>
     </li>
   </ul>
 </div>

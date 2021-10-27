@@ -26,6 +26,7 @@
 }
 
 .Item {
+  list-style: none;
   outline: 1px solid rgb(228, 233, 240);
   padding: 20px;
   background-color: rgb(243, 246, 249);
