@@ -1,12 +1,14 @@
 import React from 'react';
+
 import Profile from './components/Profile/Profile';
 import user from './user.json'
+
 import Statistics from './components/Statistics/Statistics'
 import statisticalData from './statistical-data.json'
 import './App.css';
 
 function App() {
-  return <div>
+  return (<div>
     
     <Profile
       src={user.avatar}
@@ -22,5 +24,6 @@ function App() {
   
 
   </div>
+  )
 }
 export default App;
