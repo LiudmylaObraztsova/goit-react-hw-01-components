@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './Statistics.module.css'
-import { randomColor } from '../../randomColor';
+import { randomColor } from '../../helpers/randomColor';
 
 
 export default function Statistics({ title, stats }) {
