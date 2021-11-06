@@ -23,6 +23,7 @@ function App() {
       name={user.name}
       tag={user.tag}
       location={user.location}
+      stats={user.stats}
     
     />
 
